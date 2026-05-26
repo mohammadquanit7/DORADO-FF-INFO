@@ -8,7 +8,7 @@ module.exports = async (req, res) => {
       return res.status(400).json({
         status: false,
         message: "uid and region required",
-        powered_by: "@Prime_x_Samiul"
+        powered_by: "@DORADO"
       });
     }
 
@@ -19,14 +19,14 @@ module.exports = async (req, res) => {
 
     return res.status(200).json({
       ...data,
-      powered_by: "@Prime_x_Samiul"
+      powered_by: "@DORADO"
     });
 
   } catch (e) {
     return res.status(500).json({
       status: false,
       error: e.message,
-      powered_by: "@Prime_x_Samiul"
+      powered_by: "@DORADO"
     });
   }
 };
